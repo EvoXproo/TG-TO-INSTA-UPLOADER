@@ -1,0 +1,40 @@
+{
+    "name": "InstaBot",
+    "description": "Insta automate bot",
+    "logo": "https://imgur.com/a/zdIwpug",
+    "keywords": [
+        "python3",
+        "telegram",
+        "bot",
+        "telegram-bot"
+    ],
+    "env": {
+        "INSTAGRAM_USERNAME": {
+            "description": "Instagram username",
+            "value": "",
+            "required": true
+        },
+        "INSTAGRAM_PASSWORD": {
+            "description": "Instagram password",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "A Bot's token from Botfather",
+            "value": "",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "stack": "container"
+}

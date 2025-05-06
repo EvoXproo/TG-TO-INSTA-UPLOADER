@@ -8,9 +8,9 @@ from instagrapi import Client
 import pytz
 
 # Telegram bot ka initial setup
-BOT_TOKEN = "7023532002:AAH0CIoVrugmVrGozFPIxZcn0KZbQy5XGQo"  # Yahan apna Telegram Bot Token daalein
-INSTAGRAM_USERNAME = "weird_hub_facts"  # Instagram username
-INSTAGRAM_PASSWORD = "aryan@2007"  # Instagram password
+BOT_TOKEN = os.getenv('BOT_TOKEN') # Yahan apna Telegram Bot Token daalein
+INSTAGRAM_USERNAME = os.getenv('INSTAGRAM_USERNAME')  # Instagram username
+INSTAGRAM_PASSWORD = os.getenv('INSTAGRAM_PASSWORD')  # Instagram password
 
 # Ensure downloads folder exists
 if not os.path.exists("downloads"):
